@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang "eng">
+<head>
+<meta charset="utf-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+	// ФУНКЦИИ
+
+	//1) Функция, которая принимает любое количество чисел и возвращает их произведение:
+
+	// function multiplay(){
+	// 	var res = 1;
+	// 	for (var i=0; i<arguments.length; i++){
+	// 		res*=arguments[i];
+	// 	}
+	// return res;
+	// }
+	// var funcRes = multiplay(2,50,60,2);
+	// document.write(funcRes);
+
+	// 1a) Если нет аргументов, возвращает 0:
+
+	// function multiplay(){
+	// 	var res = 1;
+	// 	for (var i=0; i<arguments.length; i++){
+	// 		res*=arguments[i];
+	// 	}
+	// return res;
+	// }
+	// var funcRes = multiplay('');
+	// document.write("<br>"+funcRes);
+
+	// 2) Факториал 10
+
+	// function factorial (num){
+	// 	var value;
+	// 	if (num>1) {
+	// 		value = num * factorial(num-1)
+	// 	} else{
+	// 		value=num;
+	// 	}
+	// 	return value;
+	// 	}
+	// 	document.write("<br>" + factorial(10));
+
+	// 3) Функция, которая принимает строку и возвращает строку перевертыш: 
+
+	// function foo(){
+
+	// 	var string = "test";
+	// 	for (var i=string.length; i--;){
+	// 		document.write(string[i]);
+	// 			}
+	// 	return (reverseString (string));
+	// 	}
+	// 	document.write("<br>" + foo());
+
+	// 4) Функция, которая в качеестве аргумента принимает строку из букв и возвраащет строку, где каждый символ разделен пробелом  и заменен на юникод:
+
+	// function getCodeStringFromText(str){
+
+	// 	var newStr = "";
+
+	// 	for (var i=0;i<str.length; i++){
+	// 		newStr += str.charCodeAt(i) + " ";
+	// 			}
+	// 	return newStr;
+	// 	}
+	// 	var str=getCodeStringFromText("hello");
+	// 	document.write("<br>" + str);
+
+	// 	5) Функция - рекурсия:
+
+	// function strToSymbol (string){
+				
+	// 	if (string.length>0){
+	// 		document.write(string[0] + "<br>");
+	// 		strToSymbol (string.slice(1));
+	// 	}
+	// 	}
+	// 	strToSymbol ("test");
+
+		// 6) Создать две функции (Callback):
+
+		// 6.1
+	
+	// function changeInArr (Arr, returnArr) {
+
+	// 	var string = "New value:";
+		
+	// 	for(var i=0; i < Arr.length; i++) {string += returnArr(Arr[i]);
+			
+	// 	}
+	// 	return string;
+	// }
+	// function callback (value) {
+	// 	var str = "";
+	// 	for (var i=0; i < value.length; i++){
+	// 		if (i==0) {
+	// 			str +=value[i].toUpperCase();
+	// 		} else {str+=value[i];}
+	// 	}
+
+	// 	return str;
+
+	// }
+	// var changeInArr2 = changeInArr(['my','name','is','Trinity'], callback);
+	// document.write (changeInArr2);
+
+
+		// 6.2
+			
+	// function changeInArr (Arr, returnArr) {
+
+	// 	var string = "New value:";
+	// 		str = "";
+
+	// 	for(var i=0; i < Arr.length; i++) {str += returnArr(Arr[i]) + "," + " ";
+			
+	// 	}
+	// 	return string += " " + str;
+	// }
+	// function callback (value) {
+
+	// 	return value * 10;
+
+	// }
+	// var string = changeInArr([10, 20, 30], callback);
+	// document.write (string);
+
+			
+	// 	6.3
+					
+	// function changeObj (Obj, returnObj) {
+
+	// 	var string = "New value:";
+	// 		str = "";
+
+	// 	for(var i=0; i < Obj.length; i++) {str += returnObj(Obj[i]) + ", ";
+			
+	// 	}
+	// 	return string += " " + str;
+	// }
+	// function callback (value) {
+	// 		var back = value.name + " is " + value.age;
+	// 	return back
+
+	// }
+	// var changeObj2 = changeObj([{age:45, name:'John'},{age:20, name:'Aaron'}], callback);
+	// document.write (changeObj2);
+
+	// 6.4
+
+		// function changeInArr (Arr, returnArr) {
+
+	// 	var string = "New value: ";
+			
+	// 	for (var i=0; i < Arr.length; i++) {string += returnArr(Arr[i]) + ", ";
+			
+	// 	}
+	// 	return string;
+	// }
+	// function callback (value) {
+	// 	var str = "";
+	// 	for  (var i= value.length; i--;) {
+	// 		str += value[i];
+	// 	}
+	// 	return str;
+
+	// }
+	// var changeInArr2 = changeInArr(['abc','123'], callback);
+	// document.write (changeInArr2);
+
+// 6.5 
+	
+	// function changeInArr (Arr, returnArr) {
+
+	// 	var string = "New value: ";
+			
+	// 	for (var i=0; i < Arr.length; i++) {string += returnArr(Arr[i]) + ", ";
+			
+	// 	}
+	// 	return string;
+	// }
+	// function callback (value) {
+		
+	// 	return value+=5;
+	// }
+	// var changeInArr2 = changeInArr([1,2,3], callback);
+	// document.write (changeInArr2);
+
+</script>
+</body>
+</html>
